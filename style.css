@@ -1,0 +1,179 @@
+* {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+}
+
+body {
+        display: grid;
+        justify-content: center;
+        background-color: rgb(61, 61, 61);
+        align-content: center;
+        height: 100vh;
+        font-family: 'Ubuntu',
+                sans-serif;
+}
+
+button {
+        padding: 10px;
+        border: 1px solid #ffef00;
+        background: transparent;
+        cursor: pointer;
+        color: #ffef00;
+}
+
+span {
+        color: #ffef00;
+        font-weight: 700;
+}
+
+.container {
+        width: 1200px;
+        height: 90vh;
+        display: grid;
+        /* align-content: center; */
+        justify-content: center;
+        background-color: rgb(36, 35, 35);
+        border-radius: 10px;
+        box-shadow: 2px 1px 35px 0px rgba(0, 0, 0, 0.75);
+        padding: 20px;
+        margin: auto;
+}
+
+nav {
+        display: flex;
+        justify-content: space-between;
+}
+
+nav ul {
+        display: flex;
+        list-style: none;
+}
+
+nav ul li {
+        margin-right: 20px;
+}
+
+nav ul li a {
+        color: gray;
+        text-decoration: none;
+        font-size: 13px;
+        text-transform: uppercase;
+        transition: 0.3s ease-in-out;
+}
+
+i {
+        color: #ffef00;
+        font-size: 20px;
+}
+
+nav ul li a:hover {
+        border-bottom: 1px solid #ffef00;
+}
+
+h3 {
+        font-weight: 200;
+        color: #ffef00;
+}
+
+.main-body {
+        width: 800px;
+        margin: auto;
+}
+
+.box {
+        height: 100%;
+        display: grid;
+        align-content: center;
+        justify-content: center;
+}
+
+.logo {
+        color: #ffef00;
+}
+
+.main-box {
+        display: flex;
+        justify-content: space-between;
+}
+
+.right-box {
+        width: 40%;
+        height: 400px;
+        display: grid;
+        align-content: center;
+        justify-content: center;
+}
+
+.content {
+        text-align: center;
+        height: 200px;
+        display: grid;
+        align-content: center;
+        justify-content: center;
+        background-color: gray;
+        box-shadow: 4px 5px 135px -4px rgba(0, 0, 0, 0.75);
+}
+
+.left-box {
+        width: 50%;
+        height: 400px;
+        height: 400px;
+        display: grid;
+        align-content: center;
+        justify-content: center;
+}
+
+.left-box h1 {
+        padding: 10px 0;
+}
+
+.left-box button {
+        margin: 10px 0;
+}
+
+.right-box img {
+        width: 100%;
+        height: 200px;
+}
+
+.menu {
+        display: none;
+}
+
+@media screen and (max-width: 1200px) {
+        .container {
+                width: 95%;
+        }
+
+        .main-body {
+                width: 95%;
+        }
+}
+
+@media screen and (max-width: 726px) {
+        .main-box {
+                display: flex;
+                flex-direction: column;
+        }
+
+        .right-box {
+                width: 100%;
+                text-align: center;
+                display: none;
+        }
+
+        .left-box {
+                width: 100%;
+                text-align: center;
+        }
+
+        .nav-item {
+                display: none;
+        }
+
+        .menu {
+                display: block;
+        }
+
+}
